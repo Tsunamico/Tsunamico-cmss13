@@ -248,8 +248,7 @@
 	name = "Synth-Graft"
 	desc = "An applicator for synthetic skin field grafts. The stuff reeks, itches like the dickens, hurts going on, and the colour is \
 		a perfectly averaged multiethnic tone that doesn't blend with <i>anyone's</i> complexion. But at least you don't have to stay in sickbay."
-	icon_state = "line" //Placeholder.
-	color = "yellow" //Placeholder, to distinguish from surgical line.
+	icon_state = "synthgraft"
 	force = 0
 	throwforce = 1.0
 	w_class = SIZE_SMALL
