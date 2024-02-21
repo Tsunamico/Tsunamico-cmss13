@@ -9,3 +9,6 @@
 	if(WEAPON_RAILGUN)
 		var/datum/cause_data/SpTGRailgun = create_cause_data("Railgun Rod")
 		cell_explosion(picked_atom, 600, 600, EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL, null, SpTGRailgun_cause_data)
+
+#undef WEAPON_SPGM_MISSILE
+#undef WEAPON_RAILGUN
