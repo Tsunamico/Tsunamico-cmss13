@@ -10,7 +10,7 @@
 	if(!hiteta)
 		return
 
-		var/prompt = tgui_alert(src, "Are you sure you want to open fire towards your current location?", "Beware the 'Good hits' !", list("Yes", "No"), 20 SECONDS)
+	var/prompt = tgui_alert(src, "Are you sure you want to open fire towards your current location?", "Beware the 'Good hits' !", list("Yes", "No"), 20 SECONDS)
 	if(prompt != "Yes")
 		return
 
