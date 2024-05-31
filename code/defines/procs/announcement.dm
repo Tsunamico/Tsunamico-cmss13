@@ -90,7 +90,7 @@
 //AI announcement that uses talking into comms
 /proc/ai_announcement(message, sound_to_play = sound('sound/misc/interference.ogg'), logging = ARES_LOG_MAIN)
 	for(var/mob/M in (GLOB.human_mob_list + GLOB.dead_mob_list))
-		if(isobserver(M) || ishuman(M) && is_mainship_level(M.z))
+		if(isobserver(M) || ishuman(M)) //&& is_mainship_level(M.z) was removed so that EVERYONE, EVERYWHERE can see it
 			playsound_client(M.client, sound_to_play, M, vol = 45)
 
 	for(var/mob/living/silicon/decoy/ship_ai/AI in ai_mob_list)
