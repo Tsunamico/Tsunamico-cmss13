@@ -12,7 +12,7 @@ block( \
 #define GLOBAL_PROC "magic BS"
 
 //Game defining directives.
-#define MAIN_AI_SYSTEM "ATLAS Proxy v7.6"
+#define MAIN_AI_SYSTEM "ATLAS Proxy V7.6"
 
 // Maploader bounds indices
 #define MAP_MINX 1
