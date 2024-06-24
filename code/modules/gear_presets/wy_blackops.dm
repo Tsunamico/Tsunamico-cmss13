@@ -127,7 +127,7 @@
 //////////////////////////
 
 /datum/equipment_preset/roninsec/synth
-	name = "Weyland-Yutani PMC (Support Synthetic)"
+	name = JOB_RONIN_SYNTH
 	flags = EQUIPMENT_PRESET_EXTRA
 
 	languages = ALL_SYNTH_LANGUAGES
