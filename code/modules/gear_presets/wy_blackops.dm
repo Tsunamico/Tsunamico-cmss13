@@ -13,7 +13,7 @@
 //	access = get_access(ACCESS_LIST_WY_PMC)
 
 
-/datum/equipment_preset/pmc/load_name(mob/living/carbon/human/new_human, randomise)
+/datum/equipment_preset/roninsec/load_name(mob/living/carbon/human/new_human, randomise)
 	new_human.gender = pick(MALE,FEMALE)
 	var/random_name
 	var/first_name
@@ -172,3 +172,66 @@
 
 
 //////////////INTERNAL AFFAIRS//////////////////
+
+/datum/equipment_preset/iait
+	name = JOB_IAIT_OPR
+	flags = EQUIPMENT_PRESET_EXTRA
+	rank = JOB_IAIT_OPR
+	idtype = /obj/item/card/id/pmc/ds
+	faction = FACTION_WY_DEATHSQUAD
+	faction_group = FACTION_LIST_WY
+	languages = list(LANGUAGE_ENGLISH, LANGUAGE_JAPANESE)
+	var/human_versus_human = FALSE
+	var/headset_type = /obj/item/device/radio/headset/distress/pmc
+	skills = /datum/skills/everything
+	paygrade = "IAIT-OPR"
+	role_comm_title = "IAIT Operator"
+
+//	/datum/equipment_preset/roninsec/New()
+//	. = ..()
+//	access = get_access(ACCESS_LIST_WY_PMC)
+
+
+/datum/equipment_preset/iait/load_name(mob/living/carbon/human/new_human, randomise)
+	new_human.gender = pick(MALE,FEMALE)
+	var/random_name
+	var/first_name
+	var/last_name
+	var/datum/preferences/A = new()
+	A.randomize_appearance(new_human)
+	if(new_human.gender == MALE)
+		if(prob(10))
+			first_name = "[capitalize(randomly_generate_japanese_word(rand(2, 3)))]"
+		else
+			first_name = "[pick(first_names_male_pmc)]"
+		new_human.f_style = "5 O'clock Shadow"
+	else
+		if(prob(10))
+			first_name = "[capitalize(randomly_generate_japanese_word(rand(2, 3)))]"
+		else
+			first_name = "[pick(first_names_female_pmc)]"
+	if(prob(25))
+		last_name = "[capitalize(randomly_generate_japanese_word(rand(2, 4)))]"
+	else
+		last_name = "[pick(last_names_pmc)]"
+	random_name = "[first_name] [last_name]"
+	new_human.change_real_name(new_human, random_name)
+	new_human.age = rand(25,35)
+	new_human.h_style = "Shaved Head"
+	new_human.r_hair = 25
+	new_human.g_hair = 25
+	new_human.b_hair = 35
+
+/datum/equipment_preset/roninsec/load_id(mob/living/carbon/human/new_human, client/mob_client)
+	if(human_versus_human)
+		var/obj/item/clothing/under/uniform = new_human.w_uniform
+		if(istype(uniform))
+			uniform.has_sensor = UNIFORM_HAS_SENSORS
+			uniform.sensor_faction = FACTION_WY_DEATHSQUAD
+	return ..()
+
+/datum/equipment_preset/iait/tl
+	name = JOB_IAIT_TL
+	rank = JOB_IAIT_OPR
+	paygrade = "IAIT-TL"
+	role_comm_title = "IAIT Team Leader"
