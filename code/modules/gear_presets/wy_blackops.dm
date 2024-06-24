@@ -51,7 +51,7 @@
 			uniform.sensor_faction = FACTION_PMC
 	return ..()
 
-//////////////////////////////////////////////////
+///////////////////////RONIN SECURITY///////////////////////////
 
 /datum/equipment_preset/roninsec/rfn
 	name = JOB_RONIN_RFN
@@ -124,7 +124,7 @@
 	skills = /datum/skills/pmc/SL
 	headset_type = /obj/item/device/radio/headset/distress/pmc/command
 
-//////////////////////////
+///////////RONIN SECURITY SPECIAL///////////////
 
 /datum/equipment_preset/roninsec/synth
 	name = JOB_RONIN_SYNTH
@@ -169,3 +169,6 @@
 /datum/equipment_preset/pmc/synth/load_skills(mob/living/carbon/human/new_human)
 		new_human.set_skills(/datum/skills/synthetic)
 		new_human.allow_gun_usage = TRUE
+
+
+//////////////INTERNAL AFFAIRS//////////////////
