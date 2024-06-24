@@ -140,7 +140,7 @@
 	headset_type = /obj/item/device/radio/headset/distress/pmc/command
 
 
-/datum/equipment_preset/pmc/synth/load_name(mob/living/carbon/human/new_human, randomise)
+/datum/equipment_preset/roninsec/synth/load_name(mob/living/carbon/human/new_human, randomise)
 	new_human.gender = pick(50;MALE,50;FEMALE)
 	var/datum/preferences/A = new()
 	A.randomize_appearance(new_human)
@@ -163,10 +163,10 @@
 	new_human.g_eyes = 62
 	new_human.b_eyes = 19
 
-/datum/equipment_preset/pmc/synth/load_race(mob/living/carbon/human/new_human)
+/datum/equipment_preset/roninsec/synth/load_race(mob/living/carbon/human/new_human)
 		new_human.set_species(SYNTH_GEN_THREE)
 
-/datum/equipment_preset/pmc/synth/load_skills(mob/living/carbon/human/new_human)
+/datum/equipment_preset/roninsec/synth/load_skills(mob/living/carbon/human/new_human)
 		new_human.set_skills(/datum/skills/synthetic)
 		new_human.allow_gun_usage = TRUE
 
