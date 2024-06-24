@@ -220,6 +220,7 @@ var/global/list/job_command_roles = JOB_COMMAND_ROLES_LIST
 #define JOB_RONIN_GUNNER "Ronin Security Gunner"
 #define JOB_RONIN_LEADER "Ronin Security Team Leader"
 #define JOB_RONIN_SYNTH "Ronin Security Suport Synthetic"
+#define JOB_RONIN_ADJUNCT "Ronin Security Corporate Adjunct"
 
 //Internal Affairs
 #define JOB_IAIT_OPR "Internal Affairs Intervention Team Operator"

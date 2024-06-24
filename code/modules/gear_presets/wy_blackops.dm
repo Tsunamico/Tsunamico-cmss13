@@ -116,11 +116,18 @@
 /datum/equipment_preset/roninsec/leader
 	name = JOB_RONIN_LEADER
 	flags = EQUIPMENT_PRESET_EXTRA
-
 	assignment = JOB_RONIN_LEADER
 	rank = JOB_RONIN_LEADER
 	role_comm_title = "Ron. Sec. TL"
 	paygrade = "RS-TL"
+	skills = /datum/skills/pmc/SL
+	headset_type = /obj/item/device/radio/headset/distress/pmc/command
+/datum/equipment_preset/roninsec/Adjunct
+	name = JOB_RONIN_ADJUNCT
+	flags = EQUIPMENT_PRESET_EXTRA
+	assignment = JOB_RONIN_ADJUNCT
+	rank = JOB_EXECUTIVE_SPECIALIST
+	paygrade = "WYC5"
 	skills = /datum/skills/pmc/SL
 	headset_type = /obj/item/device/radio/headset/distress/pmc/command
 
