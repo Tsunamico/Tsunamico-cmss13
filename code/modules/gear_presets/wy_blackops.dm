@@ -168,4 +168,4 @@
 
 /datum/equipment_preset/pmc/synth/load_skills(mob/living/carbon/human/new_human)
 		new_human.set_skills(/datum/skills/synthetic)
-		new_human.allow_gun_usage = FALSE
+		new_human.allow_gun_usage = TRUE
