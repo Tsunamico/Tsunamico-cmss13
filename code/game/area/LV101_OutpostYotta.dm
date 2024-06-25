@@ -2,7 +2,7 @@
 //ambience_exterior = AMBIENCE_SHIP
 //Lets make areas!
 //Outside Areas
-/area/LV101_OutpostYotta
+/area/lv101_OutpostYotta
 	name = "\improper Outpost Yotta Jungle"
 	base_lighting_alpha = 255
 	icon_state = "lv-west"
@@ -14,14 +14,14 @@
 	minimap_color = MINIMAP_AREA_COLONY
 	ceiling = CEILING_NONE
 
-/area/LV101_OutpostYotta/landingzone
+/area/lv101_OutpostYotta/landingzone
 	name = "\improper Outpost Yotta Landing Zone"
 	icon_state = "green"
 	is_landing_zone = TRUE
 
 
 
-/area/LV101_OutpostYotta/facility
+/area/lv101_OutpostYotta/facility
 	name = "\improper Outpost Yotta"
 	icon_state = "red"
 	ceiling = CEILING_METAL
