@@ -1,6 +1,5 @@
-//yay, groundmapping!
 //ambience_exterior = AMBIENCE_SHIP
-//Lets make areas!
+//Can't actually put the map as a reg map in just yet, for anyone curious looking at it
 //Outside Areas
 /area/lv101_OutpostYotta
 	name = "\improper Outpost Yotta Jungle"
