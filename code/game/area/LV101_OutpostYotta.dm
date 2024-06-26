@@ -4,7 +4,7 @@
 //Outside Areas
 /area/lv101_OutpostYotta
 	name = "\improper Outpost Yotta Jungle"
-	base_lighting_alpha = 255
+	//base_lighting_alpha = 255
 	icon_state = "lv-west"
 	can_build_special = TRUE
 	powernet_name = "ground"
